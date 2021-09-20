@@ -21,7 +21,7 @@ def weather():
         box.config(text="City not found!")
     else:
         x = info["main"]
-        temperature = round((x["temp"] - 273.15), 2)  # kelvin to degrees
+        temperature = round((x["temp"] - 273.15), 2)
         pressure = x["pressure"]
         humidity = x["humidity"]
         z = info["weather"]
