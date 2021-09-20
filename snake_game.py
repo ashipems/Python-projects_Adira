@@ -33,7 +33,7 @@ text.write("Score : 0   |   High Score : 0", align="center", font=("calibri", 24
 
 
 def goup():
-    if head.direction != "down":  # if not snake will travel over itself
+    if head.direction != "down":  
         head.direction = "up"
 
 
