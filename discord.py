@@ -31,6 +31,10 @@ async def on_message(message):
         elif user_message.lower() == 'random':
             await message.channel.send("This is your random number: " + str(random.randrange(1000)) + "!")
             return
+        
+        elif user_message.lower() == 'photo':
+            await message.channel.send(file=discord.File('download.jpg'))
+            return
 
     if user_message.lower() == 'anywhere':
         await message.channel.send("This can be used anywhere!")
